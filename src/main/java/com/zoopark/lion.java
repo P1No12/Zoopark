@@ -6,8 +6,8 @@ public class lion extends Carnivorous{
     }
 
     @Override
-    void talk() {
-        System.out.println("RRRRRrrrrrrrr");
+    String talk() {
+        return "RRRRRrrrrrrrr";
     }
 
 

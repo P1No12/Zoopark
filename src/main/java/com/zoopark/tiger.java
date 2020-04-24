@@ -6,7 +6,7 @@ public class tiger extends Carnivorous{
     }
 
     @Override
-    void talk() {
-        System.out.println("ARRrRrrrrr");
+    String talk() {
+       return "ARRrRrrrrr";
     }
 }

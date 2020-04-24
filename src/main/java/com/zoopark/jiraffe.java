@@ -5,5 +5,10 @@ public class jiraffe extends Herbivore{
         super(name, typeAnimal, order, age);
     }
 
+    @Override
+    String talk() {
+        return "say jiraffe";
+    }
+
 
 }

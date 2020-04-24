@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class Enclosure implements Zoopark {
     //Вольеры
-    int sizePred, sizeHerb;
+   private int sizePred, sizeHerb;
     ArrayList<Animal> enclosureHerbivorous = new ArrayList<>();
     ArrayList<Animal> enclousureCarnivorous = new ArrayList<>();
 
@@ -27,13 +27,13 @@ public class Enclosure implements Zoopark {
         if (a.getTypeAnimal().equals("Herbivorous")) {
             if (enclosureHerbivorous.size() < sizeHerb) {
                 enclosureHerbivorous.add(a);
-                System.out.print("Травоядное добавлено в вальер");
-            } else  System.out.print("Вольер травоядных полон");
+                System.out.println("Травоядное добавлено в вальер");
+            } else  System.out.println("Вольер травоядных полон");
         }else if (a.getTypeAnimal().equals("Carnivorous")) {
                 if (enclousureCarnivorous.size() < sizeHerb) {
                 enclousureCarnivorous.add(a);
-                System.out.print("Хищник добавлен в вальер");
-            } else System.out.print("Вольер хищников полон");
+                System.out.println("Хищник добавлен в вальер");
+            } else System.out.println("Вольер хищников полон");
         }
     }
 
@@ -53,6 +53,14 @@ public class Enclosure implements Zoopark {
     @Override
     public void removeAnimal(Animal a){
 
+    }
+    @Override
+    public void talkAll(){
+        System.out.println("Травоядные животные в вольере");
+        for(Animal animal: enclosureHerbivorous) System.out.println(animal.talk());
+        System.out.println("Плотоядные животные в вольере");
+        for(Animal animal: enclousureCarnivorous){ System.out.println(animal.talk());
+        }
     }
 
 

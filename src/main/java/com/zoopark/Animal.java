@@ -13,8 +13,8 @@ public abstract class Animal {
         this.order = order;
     }
 
-    abstract void eat();
-    abstract void talk();
+    abstract String eat();
+    abstract String talk();
 
     String getTypeAnimal(){
         return typeAnimal;

@@ -5,12 +5,9 @@ abstract class Herbivore extends Animal{
     Herbivore(String name, String typeAnimal, String order, int age) {
         super(name, typeAnimal, order, age);
     }
-
-    void eat() {
-
+    @Override
+    String eat() {
+        return "eat GROSS";
     }
 
-    void talk() {
-
-    }
 }
