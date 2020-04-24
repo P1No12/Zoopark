@@ -1,17 +1,26 @@
 package com.zoopark;
 
 public abstract class Animal {
-    String name;
-    int age;
-    String typeAnimal;
+     private String name;
+     private int age;
+     private   String typeAnimal;
+     private String order;
 
-    Animal(String name, String typeAnimal, int age){
+    Animal(String name, String typeAnimal, String order, int age){
         this.name = name;
         this.typeAnimal= typeAnimal;
         this.age = age;
+        this.order = order;
     }
 
     abstract void eat();
     abstract void talk();
-    abstract String getTypeAnimal();
+
+    String getTypeAnimal(){
+        return typeAnimal;
+    }
+
+    String getOrderAnimal(){
+     return order;
+    }
 }

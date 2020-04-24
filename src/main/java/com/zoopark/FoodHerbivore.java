@@ -1,4 +1,4 @@
 package com.zoopark;
 
-public class FoodHerbivore extends Food {
+public abstract class FoodHerbivore extends Food {
 }

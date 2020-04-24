@@ -1,12 +1,10 @@
 package com.zoopark;
 
 public class zebra extends Herbivore{
-    zebra(String name, String typeAnimal, int age) {
-        super(name, typeAnimal, age);
+    zebra(String name, String typeAnimal, String order, int age) {
+        super(name, typeAnimal, order ,age);
     }
 
-    @Override
-    String getTypeAnimal() {
-        return typeAnimal;
-    }
+
+
 }
