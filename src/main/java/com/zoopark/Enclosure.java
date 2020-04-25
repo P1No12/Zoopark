@@ -67,6 +67,10 @@ public class Enclosure implements Zoopark {
         }
     }
 
+    @Override
+    public void feedAnimal() {
+
+    }
 
 
 }
