@@ -28,16 +28,14 @@ class creatZoo {
         myZoo.addAnimal(jiraffe1);
         myZoo.addAnimal(jiraffe2);
 
-        myZoo.removeAnimal(leva2);
 
-        myZoo.feedAnimal(leva1,foodBeef);
+        // myZoo.removeAnimal(leva2);
+        // myZoo.feedAnimal(leva1,foodBeef);
+        // myZoo.showAll();
+        // myZoo.talkAll();
+        //myZoo.animalInTheEnclosure(zebra1);
 
-        //myZoo.showAll();
 
-        //myZoo.talkAll();
 
-        //new lion("Федя","Carnivorous", 5);
-        // System.out.println(leva);
-        //  HashMap
     }
 }

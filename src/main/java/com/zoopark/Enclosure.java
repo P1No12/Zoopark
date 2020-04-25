@@ -58,7 +58,7 @@ public class Enclosure implements Zoopark {
         showAll();
 
     }
-    @Override
+    @Override //голосовая команда для всех
     public void talkAll(){
         System.out.println("Травоядные животные в вольере");
         for(Animal animal: enclosureHerbivorous) System.out.println(animal.getName()+": "+animal.talk());
@@ -67,7 +67,7 @@ public class Enclosure implements Zoopark {
         }
     }
 
-    @Override
+    @Override //накормить животное если тип животного совападает с типом еды
     public void feedAnimal(Animal a, Food food) {
         if (a.getTypeAnimal().equals(food.typeFood)){
             System.out.println(a.getName()+" накормлен");
@@ -77,5 +77,14 @@ public class Enclosure implements Zoopark {
         }
     }
 
+    @Override// В каком вольере животное
+    public void animalInTheEnclosure(Animal a)  {
+        if (enclousureCarnivorous.contains(a)) {
+             System.out.println("Животное в вольере для плотоядных");
+        } else if (enclosureHerbivorous.contains(a)) {
+             System.out.println("Животное в вольере для травоядных");
+        } else System.out.println("Животное не вольере");
 
+
+    }
 }
