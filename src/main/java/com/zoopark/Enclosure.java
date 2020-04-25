@@ -34,8 +34,8 @@ public class Enclosure implements Zoopark {
         }
     }
 
-    //показать содержимое вольеров
-    @Override
+
+    @Override //показать содержимое вольеров
     public void showAll(){
         System.out.println("Травоядные животные в вольере");
         for(Animal animal: enclosureHerbivorous){
@@ -47,7 +47,7 @@ public class Enclosure implements Zoopark {
         }
     }
 
-    @Override
+    @Override   //удаление животного по имени
     public void removeAnimal(Animal a){
         if (a.getTypeAnimal().equals("Herbivorous"))
             enclosureHerbivorous.removeIf((Animal animal) -> animal.getName().equals(a.getName()));
