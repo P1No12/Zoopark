@@ -23,9 +23,10 @@ class creatZoo {
         myZoo.addAnimal(jiraffe1);
         myZoo.addAnimal(jiraffe2);
 
+        myZoo.removeAnimal(leva2);
         //myZoo.showAll();
 
-        myZoo.talkAll();
+        //myZoo.talkAll();
 
         //new lion("Федя","Carnivorous", 5);
         // System.out.println(leva);
