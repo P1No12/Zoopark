@@ -68,7 +68,7 @@ public class Enclosure implements Zoopark {
     }
 
     @Override
-    public void feedAnimal() {
+    public void feedAnimal(Animal a, Food food) {
 
     }
 
