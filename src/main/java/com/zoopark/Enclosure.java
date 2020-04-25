@@ -1,9 +1,6 @@
 package com.zoopark;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Enclosure implements Zoopark {
     //Вольеры
@@ -52,6 +49,12 @@ public class Enclosure implements Zoopark {
 
     @Override
     public void removeAnimal(Animal a){
+        if (a.getTypeAnimal().equals("Herbivorous"))
+            enclosureHerbivorous.removeIf((Animal animal) -> animal.getName().equals(a.getName()));
+        if (a.getTypeAnimal().equals("Carnivorous")){
+            enclousureCarnivorous.removeIf((Animal animal) -> animal.getName().equals(a.getName()));
+        }
+       showAll();
 
     }
     @Override

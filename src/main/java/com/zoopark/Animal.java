@@ -16,11 +16,8 @@ public abstract class Animal {
     abstract String eat();
     abstract String talk();
 
-    String getTypeAnimal(){
-        return typeAnimal;
-    }
-
-    String getOrderAnimal(){
-     return order;
-    }
+    String getName()        {return  name;}
+    int getAge()            {return age;}
+    String getTypeAnimal()  {return typeAnimal;}
+    String getOrderAnimal() {return order;}
 }
