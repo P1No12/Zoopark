@@ -7,8 +7,8 @@ interface Zoopark {
         void showAll(); //показать содержимое
         void removeAnimal(Animal a);//удалить животное
         void talkAll();//Говорить
-        void feedAnimal(Animal a, Food food);
-    //
+        void feedAnimal(Animal a, Food food);// накормить животное
+
 
     //накормить животных
     //создать животное

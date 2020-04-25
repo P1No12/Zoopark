@@ -29,6 +29,9 @@ class creatZoo {
         myZoo.addAnimal(jiraffe2);
 
         myZoo.removeAnimal(leva2);
+
+        myZoo.feedAnimal(leva1,foodBeef);
+
         //myZoo.showAll();
 
         //myZoo.talkAll();

@@ -69,7 +69,12 @@ public class Enclosure implements Zoopark {
 
     @Override
     public void feedAnimal(Animal a, Food food) {
-
+        if (a.getTypeAnimal().equals(food.typeFood)){
+            System.out.println(a.getName()+" накормлен");
+        } else
+        {
+            System.out.println("не правильно выбрана еда для "+a.getName());
+        }
     }
 
 
