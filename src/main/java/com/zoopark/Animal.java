@@ -13,10 +13,10 @@ public abstract class Animal {
         this.order = order;
     }
 
-    abstract String eat();
+    abstract String eat( Food food);
     abstract String talk();
 
-    String getName()        {return  name;}
+    String getName()        {return name;}
     int getAge()            {return age;}
     String getTypeAnimal()  {return typeAnimal;}
     String getOrderAnimal() {return order;}

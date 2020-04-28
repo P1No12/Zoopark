@@ -5,9 +5,14 @@ abstract public class Carnivorous  extends Animal{
         super(name, typeAnimal, order, age);
 
     }
+
     @Override
-    String eat() {
-        return "Eat MEAT";
+    String eat(Food food) {
+        if (this.getTypeAnimal().equals(food.typeFood)) {
+            return "животное накормленно";
+        }   else {
+            return "животное не накормленно";
+        }
     }
 
 }

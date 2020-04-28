@@ -1,10 +1,13 @@
 package com.zoopark;
 
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Enclosure implements Zoopark {
     //Вольеры
-   private int sizePred, sizeHerb;
+   private final int sizePred;
+    private final int sizeHerb;
     ArrayList<Animal> enclosureHerbivorous = new ArrayList<>();
     ArrayList<Animal> enclousureCarnivorous = new ArrayList<>();
 
@@ -18,6 +21,8 @@ public class Enclosure implements Zoopark {
         this.sizePred = sizeP;
         this.sizeHerb = sizeH;
     }
+
+
 
     @Override
     public void addAnimal(Animal a){

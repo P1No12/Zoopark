@@ -28,6 +28,7 @@ class creatZoo {
         myZoo.addAnimal(jiraffe1);
         myZoo.addAnimal(jiraffe2);
 
+        System.out.println(zebra1.eat(foodBeef));
 
         // myZoo.removeAnimal(leva2);
         // myZoo.feedAnimal(leva1,foodBeef);
